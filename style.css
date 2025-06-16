@@ -1,0 +1,84 @@
+
+    h1{
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #2a5298;
+        text-align: center;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+    /* Estilo general del cuerpo */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding-top: 5px; /* espacio para navbar fija */
+      background: linear-gradient(35deg, #d1b599 0%, #e2d1c3 100%);
+      color: #333;
+      min-height: 100vh;
+    }
+    .fs-4 {
+      color: #77a4f2;
+    }
+
+    /* Navbar */
+    .navbar-dark.bg-dark {
+        /* degrade  */
+      background: linear-gradient(90deg, #6f83a8 0%, #2a5298 100%);
+      /* sombras */
+      box-shadow:  0 2px 10px rgba(10, 10, 10, 0.7);
+    }
+    #destacado{
+
+        background: linear-gradient(90deg, #2a5298 0%, #1e3c72 100%);
+        color: white;
+        padding: 10px;
+        /* el radio que me da seria del contenedor de los proximos destinos */
+        border-radius: 2px;
+        text-align: center;
+    }
+
+
+    /* Secciones de destinos */
+    section {
+      margin: 40px auto;
+      max-width: 900px;
+      padding: 0 15px;
+      background-color:#93a9c952;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(42, 82, 152, 0.15);
+      padding-bottom: 30px;
+    }
+
+    /* Texto de cada destino */
+    section p {
+      font-size: 1.15rem;
+      margin: 15px 0 25px 0;
+      line-height: 1.5;
+      color:black;
+    }
+
+    /* Promoción especial (strong) */
+    strong {
+      font-size: 1.3rem;
+      color: black;
+      display: inline-block;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    /* Carrusel de imágenes */
+    .carousel img {
+      border-radius: 12px;
+      height: 450px;
+      box-shadow: 0 5px 20px rgba(23, 71, 152, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .carousel img:hover {
+        /* esto ace que se agrande la iamgen de los carouseles */
+      transform: scale(1.03);
+    }
+
+
+
