@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maldivas - Luxury Travel</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Tu CSS personalizado (crea un archivo styles.css) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+         <!-- Navbar de luxury travel  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">
+                <i class="bi bi-airplane-engines me-2"></i>Luxury Travel
+            </a>
+            <!-- Resto del navbar -->
+        </div>
+    </nav>
+
+    <!-- textos con boot -->
+    <section class="py-5 bg-dark text-white" >
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold">Retiro de Spa & Bienestar</h1>
+                    <p class="lead">Renovación integral para cuerpo y mente en los mejores refugios de bienestar del mundo</p>
+                    <div class="d-flex align-items-center mt-4">
+                        <span class="badge bg-primary fs-6 me-3">Desde $6,299</span>
+                        <span><i class="bi bi-star-fill text-warning me-1"></i> 4.8 (92 reseñas)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-4"><i class="bi bi-flower1 text-primary me-2"></i> Programa de Transformación</h2>
+                    
+                    <div class="mb-5">
+                        <h3 class="fw-bold mb-4">Terapias Incluidas</h3>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5><i class="bi bi-droplet text-primary me-2"></i> Hidroterapia</h5>
+                                        <p class="text-muted">Circuitos termales con aguas minerales naturales</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5><i class="bi bi-brightness-alt-high text-primary me-2"></i> Ayurveda</h5>
+                                        <p class="text-muted">Tratamientos ancestrales indios personalizados</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <h3 class="fw-bold mb-4">Itinerario de 7 Días</h3>
+                        <div class="accordion" id="itinerarioAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#dia1">
+                                        Día 1: Llegada y Evaluación
+                                    </button>
+                                </h2>
+                                <div id="dia1" class="accordion-collapse collapse show" data-bs-parent="#itinerarioAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled">
+                                            <li><i class="bi bi-clock text-primary me-2"></i> <strong>08:00</strong> - Evaluación médica completa</li>
+                                            <li><i class="bi bi-clock text-primary me-2"></i> <strong>10:00</strong> - Masaje desintoxicante</li>
+                                            <li><i class="bi bi-clock text-primary me-2"></i> <strong>16:00</strong> - Sesión de yoga restaurativo</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="card shadow-sm sticky-top" style="top: 100px;">
+                        <div class="card-body">
+                            <h4 class="fw-bold mb-3">Tu Inversión en Bienestar</h4>
+                            <p class="display-6 text-primary mb-1">$6,299</p>
+                            <p class="text-muted mb-4">por persona (7 días)</p>
+                            <hr class="my-3">
+                            <h5 class="fw-bold mb-3">Incluye:</h5>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i> Suite wellness con terraza privada</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i> 21 tratamientos de spa</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i> Alimentación orgánica personalizada</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i> Actividades diarias de mindfulness</li>
+                            </ul>
+                          
+                            
+        <!-- reservar -->
+                        <a href="#reserva"class="btn btn-primary ms-lg-3" data-bs-toggle="modal" data-bs-target="#reservaModal">Reservar</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Reservas -->
+        <div class="modal fade" id="reservaModal" tabindex="-1" aria-labelledby="reservaModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="reservaModalLabel">Reserva tu viaje de ensueño</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <form class="form-reserva">
+                    <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" id="nombre" class="form-control" placeholder="Nombre completo" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" id="email" class="form-control" placeholder="Email" required>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-6">
+                        <input type="tel" class="form-control" placeholder="Teléfono" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" class="form-control" placeholder="Número de personas" min="1" required>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-6">
+                        <select class="form-select" required>
+                        <option>Selecciona un destino</option>
+                        <option>Maldivas</option>
+                        <option>Santorini</option>
+                        <option>Bora Bora</option>
+                        <option>París</option>
+                        <option>Luna de Miel</option>
+                        <option>Retiro de Spa</option>
+                        <option>Expedición Premium</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <select class="form-select" required>
+                        <option value="" disabled selected>Tipo de paquete</option>
+                        <option>Básico</option>
+                        <option>Estándar</option>
+                        <option>Premium</option>
+                        <option>VIP</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-6">
+                        <input type="date" class="form-control datepicker" placeholder="Fecha de inicio" id="fechaInicio" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="date" class="form-control datepicker" placeholder="Fecha de fin" id="fechaFin" required>
+                    </div>
+                    </div>
+                    <textarea class="form-control" rows="3" placeholder="Comentarios o requerimientos especiales"></textarea>
+                    <div class="form-check mt-3">
+                    <input class="form-check-input" type="checkbox" id="newsletter">
+                    <label class="form-check-label" for="newsletter">
+                        Deseo recibir ofertas exclusivas por email
+                    </label>
+                    </div>
+                </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" onclick="confirmarReserva()">Confirmar Reserva</button>
+                </div>
+            </div>
+            </div>
+        </div>
+                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+          <!-- esto me permrite reservar -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
